@@ -120,18 +120,19 @@ button:hover {
 
 @keyframes slide-down {
     from {
-        y: -180;
+        y: 10;
     }
     to {
-        y:10;
+        y:190;
     }
 }
 
 @keyframes slide-up {
     from {
-        r:10;
+        r:190;
     }
     to {
-        r:-180;
+        r:10;
     }
 }
+
