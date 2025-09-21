@@ -1,0 +1,137 @@
+html, body {
+    height:100%;
+    margin:0;
+    background-color:rgb(217, 214, 214);
+    font-family:Inter;
+    
+}
+
+*{margin:0;
+padding:0;
+font-size:62.5%;}
+
+
+main {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    flex-direction:column;
+    gap:3rem;
+    color:rgb(58, 58, 58);
+    
+    
+}
+
+.globe {
+    transform-style: preserve-3d;
+    transition: transform 0.1s linear;
+}
+
+.globe circle {
+    /**fill:url(#indo-flag);**/
+    fill:lightBlue;
+    transition: fill 0.5s ease;
+}
+
+
+
+.globe svg {
+    height:20rem;
+    width:20rem;
+    display:block;
+}
+
+h1 {
+    font-family:Oswald;
+    text-transform:uppercase;
+    font-size:3.2rem;
+
+}
+
+h1, p {z-index:999;}
+
+p {
+    font-size:1.6rem;
+}
+
+button {
+    
+    font-size:1.6rem;
+    padding:1rem 2rem;
+    border-radius:15%;
+    border:none;
+    cursor:pointer;
+    z-index:1;
+    position:relative;
+    overflow:hidden;
+}
+
+button::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    transition:0.5s;
+    background-color:black;
+    z-index:-1;
+    color:white;
+}
+
+button:hover::before {
+    width:100%;
+}
+
+button:hover {
+    color:white;
+    transition:0.5s;
+}
+
+
+.overlay {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:rgb(0, 0, 0);
+    z-index:998;
+    animation: slideUp 2s ease forwards;
+    animation-delay:2s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.overlay-text {
+    font-size:3.2rem;
+    font-family:Oswald;
+    text-transform:uppercase;
+    
+    font-weight:bold;
+    
+}
+
+@keyframes slideUp {
+  to { transform: translateY(-100%); }
+}
+
+@keyframes slide-down {
+    from {
+        y: -180;
+    }
+    to {
+        y:10;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        r:10;
+    }
+    to {
+        r:-180;
+    }
+}

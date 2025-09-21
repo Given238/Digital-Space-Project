@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="NGCC Competition 2025">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Given Jonathan">
+        <title>Digital Space</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Julius+Sans+One&family=Kaisei+Opti&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="overlay">
+            
+        </div>
+
+
+        <main class="homepage">
+            <div class="globe">
+                <svg viewBox="0 0 200 200">
+                    <defs>
+                            <linearGradient id="indo-flag" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="50%" stop-color="red" />
+                                <stop offset="50%" stop-color="white" />
+                            </linearGradient>
+                            <mask id="slide-mask">
+                                <rect id="mask-rect" x="10" y="-180" width="180" height="180" fill="white"></rect>
+                            </mask>
+                    </defs>
+                    <circle class="globe-circle" cx="100" cy="100" r="90" fill="lightBlue" stroke="black"/>
+                    <circle cx="100" cy="100" r="90" fill="url(#indo-flag)" mask="url(#slide-mask)"></circle>
+                    
+                </svg>
+            </div>
+            
+
+            <h1>Digital space</h1>
+            <p>
+                A place where your imaginations can run wild, being creative is indirectly a result of inspiration
+            </p>
+            <button id="button" onclick="location.href='selector.html'">Enter</button>
+            
+        </main>
+        <script src="../js/script.js">
+
+        </script>
+    </body>
+</html>

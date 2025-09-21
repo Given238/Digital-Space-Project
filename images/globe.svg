@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Outer circle (globe outline) -->
+  <circle cx="100" cy="100" r="95" fill="#1e90ff" stroke="white" stroke-width="4"></circle>
+
+  <!-- Latitude lines -->
+  <ellipse cx="100" cy="100" rx="80" ry="40" fill="none" stroke="white" stroke-width="2"></ellipse>
+  <ellipse cx="100" cy="100" rx="80" ry="20" fill="none" stroke="white" stroke-width="1"></ellipse>
+  <ellipse cx="100" cy="100" rx="80" ry="60" fill="none" stroke="white" stroke-width="1"></ellipse>
+
+  <!-- Longitude lines -->
+  <ellipse cx="100" cy="100" rx="40" ry="95" fill="none" stroke="white" stroke-width="2"></ellipse>
+  <ellipse cx="100" cy="100" rx="20" ry="95" fill="none" stroke="white" stroke-width="1"></ellipse>
+  <ellipse cx="100" cy="100" rx="60" ry="95" fill="none" stroke="white" stroke-width="1"></ellipse>
+</svg>
